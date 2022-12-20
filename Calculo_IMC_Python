@@ -31,13 +31,15 @@ app_linha.place(x=0, y=35)
 
 #Configurando frame_baixo
 
-l_peso = Entry(frame_baixo, width=5, relief='solid', font=('Ivy 10 bold '), justify='center')
-1__peso.grid(row=0, column=1, sticky=NSEW, pady=10, padx=3)
-
+l_peso = Label(frame_baixo, text='Insira seu Peso', height=1, padx=0, relief='flat', anchor='center', font=('Ivy 10 bold '), justify='center')
+l_peso.grid(row=0, column=0, sticky=NSEW, pady=10, padx=3)
 e_peso = Entry(frame_baixo, width=5, relief='solid', font=('Ivy 10 bold '), justify='center')
 e_peso.grid(row=0, column=1, sticky=NSEW, pady=10, padx=3)
 
-
+l_altura = Label(frame_baixo, text='Insira sua Altura', height=1, padx=0, relief='flat', anchor='center', font=('Ivy 10 bold '), justify='center')
+l_altura.grid(row=1, column=0, sticky=NSEW, pady=10, padx=3)
+e_altura = Entry(frame_baixo, width=5, relief='solid', font=('Ivy 10 bold '), justify='center')
+e_altura.grid(row=1, column=1, sticky=NSEW, pady=10, padx=3)
 
 
 janela.mainloop()
