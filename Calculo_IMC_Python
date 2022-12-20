@@ -31,15 +31,24 @@ app_linha.place(x=0, y=35)
 
 #Configurando frame_baixo
 
-l_peso = Label(frame_baixo, text='Insira seu Peso', height=1, padx=0, relief='flat', anchor='center', font=('Ivy 10 bold '), justify='center')
+l_peso = Label(frame_baixo, text='Insira seu Peso', height=1, padx=0, relief='flat', anchor='center', font=('Ivy 10 bold '), justify='center', bg=cor1, fg=cor2)
 l_peso.grid(row=0, column=0, sticky=NSEW, pady=10, padx=3)
 e_peso = Entry(frame_baixo, width=5, relief='solid', font=('Ivy 10 bold '), justify='center')
 e_peso.grid(row=0, column=1, sticky=NSEW, pady=10, padx=3)
 
-l_altura = Label(frame_baixo, text='Insira sua Altura', height=1, padx=0, relief='flat', anchor='center', font=('Ivy 10 bold '), justify='center')
+l_altura = Label(frame_baixo, text='Insira sua Altura', height=1, padx=0, relief='flat', anchor='center', font=('Ivy 10 bold '), justify='center', bg=cor1, fg=cor2)
 l_altura.grid(row=1, column=0, sticky=NSEW, pady=10, padx=3)
 e_altura = Entry(frame_baixo, width=5, relief='solid', font=('Ivy 10 bold '), justify='center')
 e_altura.grid(row=1, column=1, sticky=NSEW, pady=10, padx=3)
+
+l_resultado = Label(frame_baixo, text='---', width=5, height=1, padx=6, pady=12, relief='flat', anchor='center', font=('Ivy 24 bold '), justify='center', bg=cor3, fg=cor1)
+l_resultado.place(x=175, y=10)
+
+l_resultado_texto = Label(frame_baixo, text='Seu IMC é: ', width=37, height=1, padx=0, pady=12, relief='flat', anchor='center', font=('Ivy 10 bold '), justify='center', bg=cor1, fg=cor2)
+l_resultado_texto.place(x=0, y=90)
+
+b_calcular = Button(frame_baixo, text='Calcular', width=34, overrelief=SOLID, height=1, relief='raised', anchor='center', font=('Ivy 10 bold '), justify='center', bg=cor3, fg=cor1)
+b_calcular.grid(row=4, column=0, sticky=NSEW, pady=60, padx=5, columnspan=30)
 
 
 janela.mainloop()
