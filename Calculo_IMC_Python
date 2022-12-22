@@ -4,8 +4,8 @@ from tkinter import ttk
 #cores
 
 cor1 = '#ffffff' # branco
-cor2 = '#444466' # preto
-cor3 = '#4065a1' # azul
+cor2 = '#ffA500' # laranja
+cor3 = '#99FF33' # verde
 
 
 janela = Tk()
